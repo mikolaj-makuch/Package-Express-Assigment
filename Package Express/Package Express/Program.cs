@@ -32,7 +32,7 @@ namespace Package_Express
             }
             else
             {
-                double total = (width + height + length) * weight / 100.0;
+                double total = (width * height * length) * weight / 100.0;
                 string cost = "Your estimated total for shipping this package is: $";
                 Console.WriteLine(cost + total);
             }
